@@ -1,0 +1,74 @@
+**Shutdown PC using Python**
+==========================
+
+Here's a simple Python script to shutdown a PC:
+
+```python
+import os
+import sys
+
+def shutdown_pc():
+    """
+    Shutdowns the PC.
+    """
+    if sys.platform == "win32":
+        # For Windows
+        os.system("shutdown /s /t 1")
+    elif sys.platform == "darwin":
+        # For macOS
+        os.system("shutdown -h now")
+    else:
+        # For Linux
+        os.system("shutdown -h now")
+
+if __name__ == "__main__":
+    confirm_shutdown = input("Are you sure you want to shutdown your PC? (yes/no): ")
+    if confirm_shutdown.lower() == "yes":
+        shutdown_pc()
+        print("Shutting down...")
+    else:
+        print("Shutdown cancelled.")
+```
+
+**How it works:**
+
+1. The `shutdown_pc` function checks the operating system using `sys.platform`.
+2. Based on the OS, it uses the corresponding command to shutdown the PC:
+	* For Windows: `shutdown /s /t 1` (shutdowns the PC after 1 second)
+	* For macOS: `shutdown -h now` (shutdowns the PC immediately)
+	* For Linux: `shutdown -h now` (shutdowns the PC immediately)
+3. The script prompts the user to confirm whether they want to shutdown their PC.
+4. If the user confirms, the `shutdown_pc` function is called, and the PC is shutdown.
+
+**Note:** This script requires administrative privileges to run.
+
+**Alternative solution using the `subprocess` module:**
+
+```python
+import subprocess
+import sys
+
+def shutdown_pc():
+    """
+    Shutdowns the PC.
+    """
+    if sys.platform == "win32":
+        # For Windows
+        subprocess.run(["shutdown", "/s", "/t", "1"])
+    elif sys.platform == "darwin":
+        # For macOS
+        subprocess.run(["shutdown", "-h", "now"])
+    else:
+        # For Linux
+        subprocess.run(["shutdown", "-h", "now"])
+
+if __name__ == "__main__":
+    confirm_shutdown = input("Are you sure you want to shutdown your PC? (yes/no): ")
+    if confirm_shutdown.lower() == "yes":
+        shutdown_pc()
+        print("Shutting down...")
+    else:
+        print("Shutdown cancelled.")
+```
+
+This solution uses the `subprocess` module to run the shutdown command.

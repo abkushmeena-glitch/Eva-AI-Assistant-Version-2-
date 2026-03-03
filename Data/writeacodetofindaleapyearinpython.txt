@@ -1,0 +1,46 @@
+**Leap Year Checker in Python**
+================================
+
+This code checks whether a given year is a leap year or not.
+
+```python
+def is_leap_year(year):
+    """
+    Checks if a year is a leap year.
+
+    Args:
+        year (int): The year to check.
+
+    Returns:
+        bool: True if the year is a leap year, False otherwise.
+    """
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+
+
+def main():
+    year = int(input("Enter a year: "))
+    if is_leap_year(year):
+        print(f"{year} is a leap year.")
+    else:
+        print(f"{year} is not a leap year.")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+**How it works:**
+
+1. The `is_leap_year` function takes an integer `year` as input.
+2. It checks if the year is divisible by 4. If not, it's not a leap year.
+3. If the year is divisible by 4, it checks if it's also divisible by 100. If it is, it must also be divisible by 400 to be a leap year.
+4. The `main` function prompts the user to enter a year and checks if it's a leap year using the `is_leap_year` function.
+
+**Example Use Cases:**
+
+* Input: `2020`
+Output: `2020 is a leap year.`
+* Input: `2019`
+Output: `2019 is not a leap year.`
+
+You can save this code to a file (e.g., `leap_year.py`) and run it from the command line using `python leap_year.py`.
