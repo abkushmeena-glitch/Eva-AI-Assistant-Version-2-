@@ -48,7 +48,7 @@ Eva AI Assistant
 ├── Frontend (GUI Interface)
 
 # Snapshots
-![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Screenshot%202026-03-03%20202308.png?raw=true)
-![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Screenshot%202026-03-03%20005554.png?raw=true)
-![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Screenshot%202026-03-03%20202343.png?raw=true)
-![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Screenshot%202026-03-03%20005809.png?raw=true)
+![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Snapshots/Screenshot%202026-03-03%20202308.png?raw=true)
+![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Snapshots/Screenshot%202026-03-03%20005554.png?raw=true)
+![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Snapshots/Screenshot%202026-03-03%20202343.png?raw=true)
+![Image description](https://github.com/abkushmeena-glitch/Eva-AI-Assistant-Version-2-/blob/main/Snapshots/Screenshot%202026-03-03%20005809.png?raw=true)
